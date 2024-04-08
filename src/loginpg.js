@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, Container, Row, Col, Alert } from 'react-bootstrap';
 import axios from 'axios';
-import { apiurl } from '../url';
+import { apiurl } from './url';
 
 const Login = () => {
   const [username, setUsername] = useState('');
