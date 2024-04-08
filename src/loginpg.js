@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form, Container, Row, Col, Alert } from 'react-bootstrap';
 import axios from 'axios';
+import { apiurl } from '../url';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -11,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/login', { username, password });
+      const response = await axios.post(`${apiurl}/api/login`, { username, password });
       console.log(response.data); // Handle success response
       setIsLoggedIn(true);
     } catch (error) {
