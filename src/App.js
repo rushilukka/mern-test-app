@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Login from'./cmp/loginpg';
+import Login from'./loginpg';
 import { Button, Form, Container, Row, Col } from 'react-bootstrap';
 
 function App() {
