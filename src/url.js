@@ -1,0 +1,1 @@
+export const apiurl = "https://mern-test-app-bend.onrender.com"
